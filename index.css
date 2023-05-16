@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
+
+
+/* --------------------------------------- */
+/* -----Basic setup----- */
+/* --------------------------------------- */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --line-height-normal: 1.7;
+    --line-height-small: 1.4;
+    --line-height-large: 2.4;
+    
+    --letter-spacing-small: 1px;
+    --letter-spacing-medium: 2px;
+    --letter-spacing-large: 5px;
+
+    --white: whitesmoke;
+    --purpul: #150D24;
+    --grey: #2b2a2a;
+    
+    --grey-background: #F4F4F4 ;
+    --pink-background: rgba(248, 168, 159,.8);
+    --dark-background: rgba(0,0,0,.45);
+    --light-background: #f7faf8;
+
+}
+
+.background_cover {
+    color: var(--white);
+    background: url("/img/backg.jpg")no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: cover;   
+}
+
+.background-cover-2 {
+    background: var(--grey-background);
+    color: var(--grey);
+    padding-bottom: 5px;
+}
+
+.background-cover-3 {
+    color: var(--white);
+    background: url("/img/bottombackg.jpg")no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+hr {
+    opacity: .2;
+}
+
+
+/* --------------------------------------- */
+/* -----Logo----- */
+/* --------------------------------------- */
+
+.wrapper {
+    padding: 0 10px;
+    margin:0;
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.logo--img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: animation 3s linear infinite;
+}
+
+@keyframes animation {
+    0%   {transform: translateX(0);}
+    50%  {transform: translateX(10px)}
+    100% {transform: translateX(0px);}
+}
+
+.logo--name {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 25px;
+}
+
+.logo--name span {
+    color: var(--pink-background);
+}
+
+/* --------------------------------------- */
+/* ----- Navigation ----- */
+/* --------------------------------------- */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a {
+    background: var(--pink-background);
+    padding: 5px;
+    color: var(--purpul);
+}
+
+/* --------------------------------------- */
+/* ----- hero ----- */
+/* --------------------------------------- */
+
+
+.hero {
+   margin-top: 5rem;
+   text-align: center; 
+   padding-bottom: 2rem;
+}
+
+.hero--heading {
+    width: 100%;
+    letter-spacing: var(--letter-spacing-small);
+}
+
+.hero--text {
+    margin-top: 4rem;
+    background: var(--dark-background);
+    padding: 10px;
+    line-height: var(--line-height-normal);
+    letter-spacing: var(--letter-spacing-small);
+}
+
+.hero--resume_download_btn {
+    display: inline-block;
+    margin-top: 2rem;
+    background: var(--pink-background);;
+    padding: 10px 20px;
+    border: 1px solid var(--purpul);
+    border-radius: 25px;
+    color: var(--purpul);
+}
+
+/* --------------------------------------- */
+/* ----- services ----- */
+/* --------------------------------------- */
+
+.my_services {
+    padding-top: 2rem;
+}
+
+.my_services--title {
+    margin-top: 0;
+    text-align: center;
+    padding-bottom: 7px;
+}
+
+.service {
+    background: var(--light-background);
+    padding: 10px;
+    margin-bottom: 2rem;
+    border: .5px solid rgba(0,0,0,.2);
+}
+
+.service p {
+    line-height: var(--line-height-small);
+    letter-spacing: 1px;
+}
+
+/* --------------------------------------- */
+/* ----- about_me ----- */
+/* --------------------------------------- */
+
+.about_me {
+   padding: 1rem; 
+}
+
+.about_me--title {
+    margin-top: 0;
+    text-align: center;
+    padding: .75rem 0;
+}
+
+.about_me--body p {
+    line-height: var(--line-height-small);
+    letter-spacing: var(--letter-spacing-small);  
+}
+
+ /* --------------------------------------- */
+/* ----- projects ----- */
+/* --------------------------------------- */
+
+.projects {
+    padding-bottom: 1rem;
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.project {
+    border-bottom: .5px solid var(--white);
+    text-align: center;
+}
+
+.project h3 {
+    padding: 1rem 0;
+}
+
+.project--img {
+   display: block;
+   width: 300px;
+   height: 60vh;
+   margin: 0 auto;
+   object-fit: cover; 
+}
+
+.project p {
+    padding: 1rem;
+    line-height: var(--line-height-small);
+    letter-spacing: var(--letter-spacing-small);
+}
+
+.project--list {
+    text-align: initial;
+    padding-bottom: 1rem;
+}
+
+.project--list li {
+    margin-bottom: 1rem;
+}
+ 
+ /* --------------------------------------- */
+/* ----- footer ----- */
+/* --------------------------------------- */
+
+footer {
+    height: 35vh;
+    padding-top: 1rem;
+    background: black;
+    color: var(--white);
+    text-align: center;
+}
+
+.footer--links {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.footer--links a {
+    color: var(--white)
+}
+ 
+ /* --------------------------------------- */
+/* ----- media queries----- */
+/* --------------------------------------- */
+ 
+ @media (min-width: 500px) {
+     .head {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+     }
+     .logo {
+         margin-bottom: 0;
+     }
+    .project--img {
+        border: 5px solid rgba(0,0,0,0.5);
+    }
+    .project--list {
+         width: 30%;
+        margin: 0 auto; 
+    }
+    .footer--links {
+        font-size: 40px;
+    }
+ }
+
+ @media (min-width: 700px) {
+     .hero {
+         width: 70%; 
+         margin: 5rem auto;
+         font-size: 1.2rem;
+     }
+    .hero--heading {
+        font-size: 3em;
+        line-height: var(--line-height-normal);
+    }
+    .hero--text {
+        line-height: var(--line-height-large);    
+    }
+    .services_container {
+        display: flex;
+        gap: 10px;
+    }
+    .service h3{
+        text-align: center;
+    }
+    .service p{
+        line-height: var(--line-height-large);
+        font-weight: 600;
+    }
+    .about_me {
+         width: 70%; 
+         margin: 2rem auto; 
+        text-align: center;
+        background: var(--dark-background);
+    }
+    .about_me--body p {
+        line-height: var(--line-height-large);
+    }
+    .background-cover-3 {
+        padding-top: 1rem;
+    }
+ }
+
+ @media (min-width: 900px) {
+     .services_container{
+         width: 80%;
+         margin: 0 auto; 
+         gap: 20px;
+     }
+     .projects_container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 15px;
+     }
+     .project {
+        border-bottom: hidden;
+        box-shadow: -2px 11px 39px -10px rgba(0,0,0,0.75);
+    }
+ }
+
+ @media (min-width: 1200px) {
+     p {
+         font-size: 17px;
+     }
+    .projects_container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+     }
+ }
+
+
+
+
+
+
+
+
+
